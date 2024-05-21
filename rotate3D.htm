@@ -1,3 +1,7 @@
+
+<!-- אנימציית מעבר על תמונה - התמונה מסתובבת 
+3d -->
+
 <!doctype html>
 <html>
 <head>
@@ -27,6 +31,36 @@ transform: rotateY(60deg);
 <body>
 
 	<img src="dog.jfif" alt="">
+
+</body>
+</html>
+
+
+<!-- tailwind הקוד עם -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translate in 3D</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Custom styles for 3D perspective and rotation */
+  .perspective-900 {
+    perspective: 900px;
+  }
+  .rotate-y-60 {
+    transition: transform 1s;
+  }
+  .rotate-y-60:hover {
+    transform: rotateY(60deg);
+  }
+</style>
+</head>
+<body class="perspective-900 flex justify-center items-center h-screen">
+
+<img src="dog.jfif" alt="Dog" class="w-72 mt-20 rotate-y-60">
 
 </body>
 </html>
